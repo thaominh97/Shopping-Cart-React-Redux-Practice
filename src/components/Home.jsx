@@ -3,17 +3,20 @@ import {products} from "../ProductData/ProductData";
 import {useEffect} from "react";
 import {addProducts} from "../features/productsSlice";
 import {addToCart} from "../features/cartSlice";
+import {useHistory} from "react-router-dom";
 
 const Home = () => {
     const dispatch = useDispatch();
+    const history = useHistory();
     const productsList = products.slice();
     console.log(productsList);
     useEffect(() => {
-        dispatch(addProducts(productsList))
+        dispatch(addProducts(productsList));
     });
     
     const handleAddToCart = (item) => {
-      dispatch(addToCart(item))
+      dispatch(addToCart(item));
+        history.push("/cart");
     }
     return (
         <div className="product-list">
