@@ -55,7 +55,7 @@
 .not-found p {
   font-size: 20px;
 }
-/* Cart */
+/* Home */
 .product-list {
   display: flex;
   flex-direction: row;
@@ -132,4 +132,122 @@
   font-size: 14px;
   font-weight: bold;
   padding: 10px;
+}
+/* Cart */
+.cart-item, .titles {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  column-gap: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+.cart-container {
+  padding: 2rem 4rem;
+}
+.cart-title {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2rem;
+}
+.cart-empty {
+
+}
+.start-shopping {
+
+}
+.cart-items {
+
+}
+.titles {
+  margin: 2rem 0 1rem 0;
+}
+.titles h4 {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.cart-items .cart-item {
+  border-top: 1px solid rgb(187, 187, 187);
+  padding: 1rem 0;
+}
+.cart-items .cart-item .cart-product {
+  text-align: left !important;
+  display: flex;
+  flex-direction: row;
+}
+.cart-items .cart-product img {
+  width: 120px;
+  object-fit: contain;
+  object-position: center;
+}
+.cart-product-quantity button {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  line-height: 15px;
+}
+.cart-product-price {
+
+}
+.cart-product-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.cart-product-quantity .count {
+  margin: 0 .5rem;
+}
+.cart-product-total-price {
+  font-weight: 600;
+  font-size: 16px;
+}
+.cart-summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  border-top: 2px dotted rgb(187, 187, 187);
+  font-weight: 600;
+  font-size: 20px;
+}
+.cart-summary p {
+  font-weight: 400;
+  font-size: 14px;
+}
+.clear-cart, .cart-summary button, .cart-product button {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 15px;
+  border: 1px solid darkgray;
+  background: #b7dcb7;
+  cursor: pointer;
+}
+.cart-product button:focus, .clear-cart:focus, .cart-summary button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em rgba(134, 224, 134, 0.66);
+  transform: translateY(-0.25em);
+}
+.cart-checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: .5rem;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+.cart-subtotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+}
+.cart-subtotal .amount {
+
+}
+.continue-shopping {
+
 }
