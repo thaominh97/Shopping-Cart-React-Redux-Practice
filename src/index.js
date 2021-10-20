@@ -6,7 +6,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { Provider} from "react-redux";
 
 import productsReducer from "./features/productsSlice";
-import cartReducer from "./features/cartSlice";
+import cartReducer, {getTotals} from "./features/cartSlice";
 
 const store = configureStore({
     reducer: {
@@ -14,6 +14,7 @@ const store = configureStore({
         cart: cartReducer,
     },
 });
+store.dispatch(getTotals());
 
 ReactDOM.render(
   <React.StrictMode>
