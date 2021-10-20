@@ -70,7 +70,7 @@ const Cart = () => {
                                        </div>
                                    </div>
                                    <div className="cart-product-price">
-                                       {cartItem?.price}
+                                       $ {cartItem?.price}
                                    </div>
                                    <div className="cart-product-quantity">
                                        <button onClick={() => handleDecreaseCart(cartItem)}>-</button>

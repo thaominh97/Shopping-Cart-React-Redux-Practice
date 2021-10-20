@@ -28,7 +28,7 @@ const Home = () => {
                         <div className="product__list-item-content">
                             <p className="product__list-item-desc">{ item?.desc }</p>
                             <span className="price">
-                                 {item?.price}
+                                 $ {item?.price}
                             </span>
                         </div>
                         <button className="product__item-btn" onClick={() => handleAddToCart(item)}>
